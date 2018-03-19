@@ -1,0 +1,10 @@
+@import "bootstrap";
+@import "fonts";
+@import "variables";
+
+body {
+  font-family: $fontRegular;
+  font-size: 18px;
+  //color: $colorGray;
+}
+@import "mediaqueries";
