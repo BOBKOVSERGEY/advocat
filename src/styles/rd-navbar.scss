@@ -2184,11 +2184,12 @@ html.boxed .rd-navbar--is-clone {
 }
 
 .nav {
-  &__phone, &__email {
+  &__phone, &__email, &__address {
     display: flex;
+    align-items: center;
   }
-  &__phone-icon, &__email-icon {
-    margin-right: 5px;
+  &__phone-icon, &__email-icon, &__address-icon {
+    margin-right: 7px;
   }
   &__soc {
     & li {
@@ -2208,5 +2209,14 @@ html.boxed .rd-navbar--is-clone {
     font-family: $fontBold;
     color: $colorBlack;
 
+  }
+}
+
+@media only screen and (max-width : 400px) {
+
+  .logo {
+    &__text {
+      font-size: 13px;
+    }
   }
 }
