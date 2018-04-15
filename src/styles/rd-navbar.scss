@@ -1682,7 +1682,7 @@ html.rd-navbar-sidebar-linked body {
 .rd-navbar-default.rd-navbar-static .rd-navbar-aside-wrap {
   position: relative;
   z-index: 1001;
-  padding: 6px 20px 6px 10px;
+  padding: 10px 20px;
   -webkit-flex-wrap: nowrap;
   -ms-flex-wrap: nowrap;
   flex-wrap: nowrap;
@@ -2187,9 +2187,20 @@ html.boxed .rd-navbar--is-clone {
   &__phone, &__email, &__address {
     display: flex;
     align-items: center;
+    color: $colorGray;
+    & a {
+      color: $colorGray;
+      transition: all .3s;
+      &:hover {
+        color: $colorGold;
+      }
+    }
   }
   &__phone-icon, &__email-icon, &__address-icon {
     margin-right: 7px;
+    & i {
+      color: $colorGold;
+    }
   }
   &__soc {
     & li {
