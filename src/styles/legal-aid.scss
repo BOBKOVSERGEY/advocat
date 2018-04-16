@@ -1,0 +1,86 @@
+.legal-aid {
+  margin-bottom: 30px;
+  &__item {
+    position: relative;
+    padding: 35px 30px;
+    text-align: center;
+    margin: 0 auto 15px auto;
+    max-width: 400px;
+    &:before, &:after {
+      content: '';
+      position: absolute;
+      width: calc(100% - 35px);
+      height: calc(100% - 35px);
+      border: 1px solid #e5e7e9;
+      pointer-events: none;
+      transition: .33s all ease;
+    }
+    &:before {
+      top: 0;
+      left: 0;
+      border-width: 1px 0 0 1px;
+    }
+    &:after {
+      bottom: 0;
+      right: 0;
+      border-width: 0 1px 1px 0;
+    }
+  }
+
+  &__item-icon {
+    font-size: 50px;
+    text-align: center;
+    color: $colorGold;
+  }
+  &__item-divider {
+    max-width: 100%;
+    margin: 13px auto;
+    transition: .3s all ease;
+    width: 49px;
+    height: 2px;
+    background: $colorGold;
+  }
+  &__item-body {
+    font-size: 14px;
+    color: $colorGray;
+    position: relative;
+    will-change: transform;
+    transition: .3s all ease;
+  }
+  &__item-top {
+    top: 0;
+    position: relative;
+    transition: .3s all ease;
+  }
+  &__item-heading {
+    & a {
+      font-family: $fontBold;
+      color: $colorBlack;
+      font-size: 18px;
+    }
+  }
+}
+.legal-aid__item:hover:before, .legal-aid__item:hover:after {
+  width: 100%;
+  height: 100%;
+  border-color: $colorGold
+}
+.legal-aid__item:hover .legal-aid__item-top {
+  transform: translateY(-9px);
+}
+
+.legal-aid__item:hover .legal-aid__item-body {
+  transform: translateY(9px);
+}
+.legal-aid__item:hover .legal-aid__item-divider {
+  width: 168px;
+}
+
+@media (min-width: 768px) {
+  .legal-aid {
+    &__item {
+      max-width: 308px;
+      padding: 67px 40px 61px;
+    }
+  }
+}

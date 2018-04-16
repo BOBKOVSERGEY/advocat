@@ -7,7 +7,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Адвокатский кабинет Тыняной И.И</title>
   <link rel="stylesheet" href="dist/css/main.css">
-
+  <link href="dist/images/favicon.ico" type="image/x-icon" rel="shortcut icon">
 </head>
 <body>
 <div class="page">
@@ -71,7 +71,7 @@
             </div>
             <div class="rd-navbar-nav-wrap">
               <div class="rd-navbar-nav-inner">
-                <div class="rd-navbar-btn-wrap"><a href="appointment.html" class="btn btn-smaller btn-primary-outline">Задать вопрос</a></div>
+                <div class="rd-navbar-btn-wrap"><a href="#" class="btn btn--small btn--gold">Задать вопрос</a></div>
                 <ul class="rd-navbar-nav">
                   <li class="active"><a href="#">Главная</a>
                   </li>
@@ -106,46 +106,39 @@
                   <li><a href="#">Юридическая помощь</a>
                     <ul class="rd-navbar-megamenu">
                       <li>
-                        <h5 class="rd-megamenu-header">Помощь адвоката физическим лицам</h5>
+                        <!--<h5 class="rd-megamenu-header">Помощь адвоката физическим лицам</h5>-->
                         <ul class="rd-navbar-list">
                           <li><a href="#">Юридическое сопровождение</a></li>
                           <li><a href="#">Экономические преступления</a></li>
                           <li><a href="#">Арбитражные споры</a></li>
                           <li><a href="#">Гражданские дела</a></li>
                           <li><a href="#">Вопросы недвижимости</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="rd-navbar-list">
                           <li><a href="#">Уголовные дела</a></li>
                           <li><a href="#">Консультация по гражданскому праву</a></li>
                           <li><a href="#">Представление интересов в судах</a></li>
                           <li><a href="#">Жилищные споры</a></li>
                           <li><a href="#">Трудовые споры</a></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="rd-navbar-list">
                           <li><a href="#">Наследственные дела</a></li>
                           <li><a href="#">Взыскание долгов</a></li>
                           <li><a href="#">Семейные споры</a></li>
                           <li><a href="#">Защита прав потребителей</a></li>
                           <li><a href="#">Защита прав собственников</a></li>
-                          <li><a href="#">Налоговые споры</a></li>
-                          <li><a href="#">Взыскание морального вреда</a></li>
-                          <li><a href="#">Личный или семейный адвокат</a></li>
-                          <li><a href="#">Споры со страховыми компаниями</a></li>
                         </ul>
                       </li>
                       <li>
-                        <h5 class="rd-megamenu-header">Помощь адвоката юридическим лицам</h5>
                         <ul class="rd-navbar-list">
-                          <li><a href="#">Юридическое сопровождение</a></li>
-                          <li><a href="#">Экономические преступления</a></li>
-                          <li><a href="#">Арбитражные споры</a></li>
-                          <li><a href="#">Гражданские дела</a></li>
-                          <li><a href="#">Вопросы недвижимости</a></li>
-                          <li><a href="#">Уголовные дела</a></li>
-                          <li><a href="#">Консультация по гражданскому праву</a></li>
-                          <li><a href="#">Представление интересов в судах</a></li>
-                          <li><a href="#">Трудовые споры</a></li>
-                          <li><a href="#">Взыскание долгов</a></li>
-                          <li><a href="#">Защита прав потребителей</a></li>
-                          <li><a href="#">Защита прав собственников</a></li>
+                          <li><a href="#">Консультация по уголовным делам</a></li>
                           <li><a href="#">Налоговые споры</a></li>
                           <li><a href="#">Взыскание морального вреда</a></li>
+                          <li><a href="#">Личный или семейный адвокат</a></li>
                           <li><a href="#">Споры со страховыми компаниями</a></li>
                         </ul>
                       </li>
@@ -161,53 +154,50 @@
       </nav>
     </div>
   </header>
-  <section>
+  <section class="slider">
     <div data-loop="false" data-slide-effect="fade" data-autoplay="false" data-simulate-touch="true" class="swiper-container swiper-slider swiper-variant-1 bg-gray-base">
       <div class="swiper-wrapper text-center">
         <div data-slide-bg="dist/images/slide-1.jpg" class="swiper-slide">
           <div class="swiper-slide-caption text-center">
-            <div class="shell">
-              <div class="range range-sm-center">
-                <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                  <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
-                    <h3 class="medium text-primary">With Us</h3>
-                  </div>
-                  <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider-header">You Are Always One Step Ahead</h2>
-                  <p data-caption-animate="fadeInUp" data-caption-delay="250" class="text-bigger slider-text">Strategies of our attorneys will help you solve very complex legal issues.</p>
-                  <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="400" href="appointment.html" class="btn btn-lg btn-primary-outline-v2">Request a Free Consultation</a></div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
+                  <h3 class="slider__item-heading-before">Со мной</h3>
                 </div>
+                <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider__item-heading">Вы всегда на шаг впереди</h2>
+                <p data-caption-animate="fadeInUp" data-caption-delay="250" class="slider__item-heading-after">Мои стратегии помогут вам решить очень сложные юридические вопросы</p>
+                <div class="slider__item-btn-wrap">
+                  <a data-caption-animate="fadeInUp" data-caption-delay="400" href="#" class="btn btn--large btn--gold-white">Бесплатная консультация</a></div>
               </div>
             </div>
           </div>
         </div>
         <div data-slide-bg="dist/images/slide-2.jpg" class="swiper-slide">
           <div class="swiper-slide-caption text-center">
-            <div class="shell">
-              <div class="range range-sm-center">
-                <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                  <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
-                    <h3 class="medium text-primary">We Offer</h3>
-                  </div>
-                  <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider-header">Affordable and Effective Legal Help</h2>
-                  <p data-caption-animate="fadeInUp" data-caption-delay="250" class="text-bigger slider-text">Our expert team of attorneys and consultants will be glad to provide necessary legal assistance.</p>
-                  <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="400" href="appointment.html" class="btn btn-lg btn-primary-outline-v2">Request a Free Consultation</a></div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
+                  <h3 class="slider__item-heading-before">Я предлагаю</h3>
                 </div>
+                <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider__item-heading">Доступную и эффективную помощь</h2>
+                <p data-caption-animate="fadeInUp" data-caption-delay="250" class="slider__item-heading-after">Я буду рада предоставить необходимую юридическую помощь</p>
+                <div class="slider__item-btn-wrap">
+                  <a data-caption-animate="fadeInUp" data-caption-delay="400" href="#" class="btn btn--large btn--gold-white">Бесплатная консультация</a></div>
               </div>
             </div>
           </div>
         </div>
         <div data-slide-bg="dist/images/slide-3.jpg" class="swiper-slide">
           <div class="swiper-slide-caption text-center">
-            <div class="shell">
-              <div class="range range-sm-center">
-                <div class="cell-sm-11 cell-md-10 cell-lg-9">
-                  <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
-                    <h3 class="medium text-primary">With Our Services</h3>
-                  </div>
-                  <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider-header">You Will Get Extensive Legal Support</h2>
-                  <p data-caption-animate="fadeInUp" data-caption-delay="250" class="text-bigger slider-text">We have years of experience in providing legal help in various spheres of law.</p>
-                  <div class="group-xl-responsive offset-top-30 offset-sm-top-45"><a data-caption-animate="fadeInUp" data-caption-delay="400" href="appointment.html" class="btn btn-lg btn-primary-outline-v2">Request a Free Consultation</a></div>
+            <div class="row">
+              <div class="col-md-8 offset-md-2">
+                <div data-caption-animate="fadeInUp" data-caption-delay="0s" class="header-decorated">
+                  <h3 class="slider__item-heading-before">С моей помощью</h3>
                 </div>
+                <h2 data-caption-animate="fadeInUp" data-caption-delay="150" class="slider__item-heading">Вы получите обширную юридическую поддержку</h2>
+                <p data-caption-animate="fadeInUp" data-caption-delay="250" class="slider__item-heading-after">У меня есть многолетний опыт оказания юридической помощи в различных сферах права.</p>
+                <div class="slider__item-btn-wrap">
+                  <a data-caption-animate="fadeInUp" data-caption-delay="400" href="#" class="btn btn--large btn--gold-white">Бесплатная консультация</a></div>
               </div>
             </div>
           </div>
@@ -217,6 +207,98 @@
       <div class="swiper-nav-wrap">
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
+      </div>
+    </div>
+  </section>
+  <section class="legal-aid">
+    <div class="container">
+      <!--<div class="row">
+        <div class="col-md-4">
+          <div class="legal-aid__item">
+            <div class="legal-aid__item-top">
+              <div class="legal-aid__item-icon">
+                <span class="icon mercury-icon-briefcase"></span>
+              </div>
+              <div class="legal-aid__item-heading">
+                <h5><a href="#">Business Law</a></h5>
+              </div>
+            </div>
+            <div class="legal-aid__item-divider"></div>
+            <div class="legal-aid__item-body">
+              <p>Business law deals with the creation of new businesses and the issues that arise as existing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="legal-aid__item">
+            <div class="legal-aid__item-top">
+              <div class="legal-aid__item-icon">
+                <span class="icon mercury-icon-briefcase"></span>
+              </div>
+              <div class="legal-aid__item-heading">
+                <h5><a href="#">Business Law</a></h5>
+              </div>
+            </div>
+            <div class="legal-aid__item-divider"></div>
+            <div class="legal-aid__item-body">
+              <p>Business law deals with the creation of new businesses and the issues that arise as existing.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="legal-aid__item">
+            <div class="legal-aid__item-top">
+              <div class="legal-aid__item-icon">
+                <span class="icon mercury-icon-briefcase"></span>
+              </div>
+              <div class="legal-aid__item-heading">
+                <h5><a href="#">Business Law</a></h5>
+              </div>
+            </div>
+            <div class="legal-aid__item-divider"></div>
+            <div class="legal-aid__item-body">
+              <p>Business law deals with the creation of new businesses and the issues that arise as existing.</p>
+            </div>
+          </div>
+        </div>
+      </div>-->
+      <div class="row">
+        <div class="col-md-8 offset-md-2">
+          <div class="row">
+            <div class="col-md-6">
+              <div class="legal-aid__item">
+                <div class="legal-aid__item-top">
+                  <div class="legal-aid__item-icon">
+                    <span class="icon mercury-icon-briefcase"></span>
+                  </div>
+                  <div class="legal-aid__item-heading">
+                    <h5><a href="#">Физическим лицам</a></h5>
+                  </div>
+                </div>
+                <div class="legal-aid__item-divider"></div>
+                <div class="legal-aid__item-body">
+                  <p>Business law deals with the creation of new businesses and the issues that arise as existing.</p>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="legal-aid__item">
+                <div class="legal-aid__item-top">
+                  <div class="legal-aid__item-icon">
+                    <span class="icon mercury-icon-briefcase"></span>
+                  </div>
+                  <div class="legal-aid__item-heading">
+                    <h5><a href="#">Юридическим лицам</a></h5>
+                  </div>
+                </div>
+                <div class="legal-aid__item-divider"></div>
+                <div class="legal-aid__item-body">
+                  <p>Business law deals with the creation of new businesses and the issues that arise as existing.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>

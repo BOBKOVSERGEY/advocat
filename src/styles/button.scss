@@ -1,0 +1,43 @@
+.btn {
+  max-width: 100%;
+  border-radius: 0;
+  border: 2px solid;
+  transition: .3s ease-out;
+  font-family: $fontBold;
+  &--small {
+    padding: 6px 32px;
+  }
+  &--large {
+    padding: 9px 29px;
+  }
+  &--gold {
+    color: $colorGold;
+    background-color: transparent;
+    border-color: $colorGold;
+    &:hover {
+      color: $colorWhite;
+      background: $colorGold;
+      transform: translateY(-3px);
+    }
+    &:focus {
+      transform: translateY(3px);
+      border-color: $colorGold;
+      box-shadow: none;
+    }
+  }
+  &--gold-white {
+    color: $colorWhite;
+    background-color: transparent;
+    border-color: $colorGold;
+    &:hover {
+      color: $colorWhite;
+      background: $colorGold;
+      transform: translateY(-3px);
+    }
+    &:focus {
+      transform: translateY(3px);
+      border-color: $colorGold;
+      box-shadow: none;
+    }
+  }
+}
