@@ -7,6 +7,7 @@
 @import "button";
 @import "slider";
 @import "legal-aid";
+@import "about-main";
 
 
 body {
@@ -24,6 +25,9 @@ ul, ol {
 }
 a:hover, a:focus {
   text-decoration: none;
+}
+img {
+  max-width: 100%;
 }
 @import "rd-navbar";
 @import "to-top";

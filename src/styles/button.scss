@@ -32,10 +32,10 @@
     &:hover {
       color: $colorWhite;
       background: $colorGold;
-      transform: translateY(-3px);
+      transform: translateY(-2px);
     }
     &:focus {
-      transform: translateY(3px);
+      transform: translateY(0);
       border-color: $colorGold;
       box-shadow: none;
     }
