@@ -4,12 +4,17 @@
   margin-top: 40px;
   &__box {
     display: flex;
-    background: $colorBlackLight;
+    align-items: center;
+    background: rgba($colorBlackLight, .95);
     margin-right: 40px;
     margin-left: 40px;
     padding: 110px 45px;
     position: relative;
     z-index: 1;
+  }
+  &__btn {
+    margin-top: 10px;
+    padding-left: 40px;
   }
   &__bg {
     background: url(../images/about-main.jpg) no-repeat top center;
@@ -21,10 +26,13 @@
     left: 0;
     z-index: 0;
   }
+  &__box-content-wrapper {
+    width: 70%;
+  }
   &__box-content {
-    padding: 26px 60px;
+    padding: 26px 40px;
     position: relative;
-    //max-width: 570px;
+    margin-right: 50px;
     &:after, &:before {
       content: '';
       position: absolute;
@@ -46,7 +54,7 @@
     }
     & p {
       color: $colorWhite;
-      font-size: 14px;
+      font-size: 15px;
       line-height: 1.74;
     }
   }
@@ -57,20 +65,52 @@
     margin-bottom: 20px;
   }
   &__box-img {
-
+    width: 30%;
   }
 }
 
 @media only screen and (max-width : 992px) {
   .about-main {
-
     &__box {
+      flex-direction: column;
       margin-right: 10px;
       margin-left: 10px;
-      padding: 110px 0px;
+      padding: 110px 30px;
+    }
+    &__btn {
+      padding-left: 30px;
+    }
+    &__box-content-wrapper {
+      width: 100%;
     }
     &__box-content {
-      padding: 26px 10px;
+      margin-right: 0;
+      margin-bottom: 30px;
+      padding: 30px;
+    }
+    &__box-img {
+      display: none;
+    }
+  }
+
+}
+
+@media only screen and (max-width : 480px) {
+  .about-main {
+    &__box-heading {
+      font-size: 32px;
+    }
+    &__box {
+      padding: 50px 15px;
+    }
+    &__btn {
+      padding-left: 0px;
+      & .btn {
+        font-size: 12px;
+      }
+    }
+    &__box-content {
+      padding: 15px;
     }
   }
 
