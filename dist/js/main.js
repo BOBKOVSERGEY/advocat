@@ -14,7 +14,8 @@ var userAgent = navigator.userAgent.toLowerCase(),
 
   plugins = {
     rdNavbar: $(".rd-navbar"),
-    swiper: $(".swiper-slider")
+    swiper: $(".swiper-slider"),
+    counter: $(".counter"),
   };
 
 $(function () {
@@ -298,4 +299,52 @@ $(function () {
       new WOW().init();
     }
   }
+
+  /**
+   * isScrolledIntoView
+   * @description  check the element whas been scrolled into the view
+   */
+  function isScrolledIntoView(elem) {
+    var $window = $(window);
+    return elem.offset().top + elem.outerHeight() >= $window.scrollTop() && elem.offset().top <= $window.scrollTop() + $window.height();
+  }
+
+
+  /**
+   * jQuery Count To
+   * @description Enables Count To plugin
+   */
+  if (plugins.counter.length) {
+    var i;
+
+    for (i = 0; i < plugins.counter.length; i++) {
+      var $counterNotAnimated = $(plugins.counter[i]).not('.animated');
+      $document
+        .on("scroll", $.proxy(function() {
+          var $this = this;
+
+          if ((!$this.hasClass("animated")) && (isScrolledIntoView($this))) {
+            $this.countTo({
+              refreshInterval: 40,
+              from: 0,
+              to: parseInt($this.text(),10),
+              speed: $this.attr("data-speed") || 1000,
+              formatter: function(value, options) {
+                value = value.toFixed(options.decimals);
+                if (value < 10) {
+                  return '0' + value;
+                }
+                return value;
+              }
+            });
+            $this.addClass('animated');
+          }
+        }, $counterNotAnimated))
+        .trigger("scroll");
+    }
+  }
+
+
+
+
 });
