@@ -12,6 +12,7 @@
   &__item-heading-before {
     color: $colorGold;
     font-size: 32px;
+    margin-bottom: 20px;
     //font-family: $fontBold;
     &:before {
       content: '';
@@ -37,6 +38,7 @@
     font-size: 50px;
     color: $colorWhite;
     font-family: $fontBold;
+    margin-bottom: 30px;
   }
   &__item-heading-after {
     margin-top: 20px;

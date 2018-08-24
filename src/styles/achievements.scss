@@ -1,0 +1,10 @@
+.achievements {
+  padding: 60px 0;
+  &__item-percent {
+    position: relative;
+    &:after {
+      content: '%';
+      position: absolute;
+    }
+  }
+}

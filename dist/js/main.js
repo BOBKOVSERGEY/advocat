@@ -344,6 +344,18 @@ $(function () {
     }
   }
 
+  $('.retreat__btn-click').on('click', function (e) {
+    e.preventDefault();
+    $('.retreat__show').stop().slideToggle(1000);
+    var $this = $(this),
+        text = $this.text();
+    if(text == 'Читать далее'){
+      $this.text('Скрыть текст');
+    }else{
+      $this.text('Читать далее');
+    }
+  })
+
 
 
 

@@ -53,7 +53,7 @@
     transition: .3s all ease;
   }
   &__item-heading {
-    & a {
+    & h5 {
       font-family: $fontBold;
       color: $colorBlack;
       font-size: 18px;

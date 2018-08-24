@@ -25,6 +25,23 @@
       box-shadow: none;
     }
   }
+  &--gold-fool {
+    color: $colorWhite;
+    background-color: $colorGold;
+    border-color: $colorGold;
+    &:hover {
+      color: $colorWhite;
+      background: $colorGoldDark;
+      border-color: $colorGoldDark;
+      transform: translateY(-3px);
+    }
+    &:focus {
+      transform: translateY(3px);
+      background: $colorGoldDark;
+      border-color: $colorGoldDark;
+      box-shadow: none;
+    }
+  }
   &--gold-white {
     color: $colorWhite;
     background-color: transparent;

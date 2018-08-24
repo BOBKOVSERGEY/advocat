@@ -1,0 +1,16 @@
+.retreat {
+  padding: 0px 0 30px 0;
+  text-align: center;
+  &__heading {
+    text-align: center;
+    font-family: $fontBold;
+    margin-bottom: 20px;
+    font-size: 45px;
+  }
+  &__show {
+    display: none;
+  }
+  &__btn {
+    margin-top: 20px;
+  }
+}
