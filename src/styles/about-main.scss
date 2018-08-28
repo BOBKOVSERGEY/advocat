@@ -2,6 +2,13 @@
   position: relative;
   margin-bottom: 60px;
   margin-top: 40px;
+  &__link {
+    color: $colorGoldDark;
+    transition: all .3s;
+    &:hover {
+      color: $colorGold;
+    }
+  }
   &__box {
     display: flex;
     align-items: center;
