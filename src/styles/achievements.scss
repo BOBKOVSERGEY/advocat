@@ -1,6 +1,6 @@
 .achievements {
   position: relative;
-  background-image: url(../images/retreat.jpg);
+  background-image: url(../images/achievements.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -12,7 +12,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: linear-gradient(to right bottom, rgba($colorBlackLight, .85), rgba($colorBlack, .85));
+    background-image: linear-gradient(to right bottom, rgba($colorBlackLight, .75), rgba($colorBlack, .75));
   }
   &__item {
     margin-bottom: 30px;

@@ -1,4 +1,15 @@
-
+.faq {
+  padding: 60px 0;
+  &__heading {
+    font-family: $fontBold;
+    //color: $colorWhite;
+    font-size: 45px;
+    margin-bottom: 30px;
+  }
+  &__img {
+    margin: 30px 0;
+  }
+}
 .card-group.card-group-custom {
   display: block;
   margin-bottom: 0;
@@ -71,7 +82,7 @@
 .card-light .card-title a {
   position: relative;
   padding: 24px 55px 22px 32px;
-  font: 700 16px/24px "PT Serif", "Times New Roman", Times, serif;
+  //font: 700 16px/24px "PT Serif", "Times New Roman", Times, serif;
   color: #000;
   transition: 1.5s all ease;
 }
@@ -122,6 +133,7 @@
   border-bottom: 1px solid #d9d9d9;
   color: #9f9f9f;
   will-change: transform;
+  font-size: 14px;
 }
 
 .card-light .card-body {
@@ -145,7 +157,7 @@
   position: relative;
   z-index: 1;
   padding: 24px 82px 22px 32px;
-  font: 700 16px/24px "PT Serif", "Times New Roman", Times, serif;
+  //font: 700 16px/24px "PT Serif", "Times New Roman", Times, serif;
   color: #000;
   transition: 1.3s all ease;
   border-radius: 6px 6px 0 0;
@@ -236,8 +248,9 @@
 .card-light .card-title a {
   position: relative;
   padding: 24px 55px 22px 32px;
-  font: 700 18px/28px "PT Serif", "Times New Roman", Times, serif;
-  letter-spacing: -.025em;
+  font-family: $fontBold;
+
+  //letter-spacing: -.025em;
   color: #000;
   transition: 1.5s all ease;
 }
@@ -300,5 +313,13 @@
   .card-light .card-title a,
   .card-light .card-body {
     padding-left: 15px;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .faq {
+    &__heading {
+      font-size: 32px;
+    }
   }
 }
