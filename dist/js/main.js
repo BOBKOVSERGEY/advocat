@@ -16,6 +16,7 @@ var userAgent = navigator.userAgent.toLowerCase(),
     rdNavbar: $(".rd-navbar"),
     swiper: $(".swiper-slider"),
     counter: $(".counter"),
+    owl: $(".owl-carousel"),
   };
 
 $(function () {
@@ -355,6 +356,93 @@ $(function () {
       $this.text('Читать далее');
     }
   })
+
+  /**
+   * Owl carousel
+   * @description Enables Owl carousel plugin
+   */
+  if (plugins.owl.length) {
+    var i;
+    for (i = 0; i < plugins.owl.length; i++) {
+      var c = $(plugins.owl[i]),
+        responsive = {};
+
+      var aliaces = ["-", "-xs-", "-sm-", "-md-", "-lg-"],
+        values = [0, 480, 768, 992, 1200],
+        j, k;
+
+      for (j = 0; j < values.length; j++) {
+        responsive[values[j]] = {};
+        for (k = j; k >= -1; k--) {
+          if (!responsive[values[j]]["items"] && c.attr("data" + aliaces[k] + "items")) {
+            responsive[values[j]]["items"] = k < 0 ? 1 : parseInt(c.attr("data" + aliaces[k] + "items"));
+          }
+          if (!responsive[values[j]]["stagePadding"] && responsive[values[j]]["stagePadding"] !== 0 && c.attr("data" + aliaces[k] + "stage-padding")) {
+            responsive[values[j]]["stagePadding"] = k < 0 ? 0 : parseInt(c.attr("data" + aliaces[k] + "stage-padding"));
+          }
+          if (!responsive[values[j]]["margin"] && responsive[values[j]]["margin"] !== 0 && c.attr("data" + aliaces[k] + "margin")) {
+            responsive[values[j]]["margin"] = k < 0 ? 30 : parseInt(c.attr("data" + aliaces[k] + "margin"));
+          }
+        }
+      }
+
+      // Create custom Pagination
+      if (c.attr('data-dots-custom')) {
+        c.on("initialized.owl.carousel", function (event) {
+          var carousel = $(event.currentTarget),
+            customPag = $(carousel.attr("data-dots-custom")),
+            active = 0;
+
+          if (carousel.attr('data-active')) {
+            active = parseInt(carousel.attr('data-active'));
+          }
+
+          carousel.trigger('to.owl.carousel', [active, 300, true]);
+          customPag.find("[data-owl-item='" + active + "']").addClass("active");
+
+          customPag.find("[data-owl-item]").on('click', function (e) {
+            e.preventDefault();
+            carousel.trigger('to.owl.carousel', [parseInt(this.getAttribute("data-owl-item")), 300, true]);
+          });
+
+          carousel.on("translate.owl.carousel", function (event) {
+            customPag.find(".active").removeClass("active");
+            customPag.find("[data-owl-item='" + event.item.index + "']").addClass("active")
+          });
+        });
+      }
+
+      // Create custom Numbering
+      if (typeof(c.attr("data-numbering")) !== 'undefined') {
+        var numberingObject = $(c.attr("data-numbering"));
+
+        c.on('initialized.owl.carousel changed.owl.carousel', function (numberingObject) {
+          return function (e) {
+            if (!e.namespace) return;
+            numberingObject.find('.numbering-current').text(e.item.index + 1);
+            numberingObject.find('.numbering-count').text(e.item.count);
+          };
+        }(numberingObject));
+      }
+
+      c.owlCarousel({
+        autoplay:true,
+        autoplayTimeout:8000,
+        loop: isNoviBuilder === "designMode" ? false : c.attr("data-loop") == 'true',
+        items: 1,
+        dotsContainer: c.attr("data-pagination-class") || false,
+        navContainer: c.attr("data-navigation-class") || false,
+        mouseDrag: isNoviBuilder === "designMode" ? false : c.attr("data-mouse-drag") !== "false",
+        nav: c.attr("data-nav") === "true",
+        dots: c.attr("data-dots") === "true",
+        dotsEach: c.attr("data-dots-each") ? parseInt(c.attr("data-dots-each")) : false,
+        animateIn: c.attr('data-animation-in') ? c.attr('data-animation-in') : 'slide',
+        animateOut: c.attr('data-animation-out') ? c.attr('data-animation-out') : false,
+        responsive: responsive,
+        navText: []
+      });
+    }
+  }
 
 
 

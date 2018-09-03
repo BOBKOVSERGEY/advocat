@@ -1,0 +1,20 @@
+.free-consultation {
+  background-color: $colorGold;
+  padding: 100px 0;
+  &__heading {
+    font-family: $fontBold;
+    font-size: 34px;
+    color: $colorWhite;
+    margin: 0;
+    padding: 0;
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .free-consultation {
+
+    &__heading {
+      margin-bottom: 30px;
+    }
+  }
+}

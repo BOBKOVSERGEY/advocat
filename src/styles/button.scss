@@ -10,6 +10,25 @@
   &--large {
     padding: 14px 29px;
   }
+  &--big {
+    padding: 20px 29px;
+    min-width: 270px;
+  }
+  &--white {
+    color: $colorWhite;
+    background-color: transparent;
+    border-color: $colorWhite;
+    &:hover {
+      color: $colorBlack;
+      background: $colorWhite;
+      transform: translateY(-3px);
+    }
+    &:focus {
+      transform: translateY(3px);
+      border-color: $colorWhite;
+      box-shadow: none;
+    }
+  }
   &--gold {
     color: $colorGold;
     background-color: transparent;
