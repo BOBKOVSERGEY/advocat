@@ -13,6 +13,7 @@
   }
   &__item-description {
     font-size: 15px;
+    color: $colorGray;
   }
   &__item-img {
     margin-right: 15px;
@@ -695,7 +696,7 @@ blockquote cite {
 }
 
 .quote-bordered .quote-open > svg {
-  fill: #cfaa45;
+  fill: $colorGold;
 }
 
 .quote-bordered .quote-footer {

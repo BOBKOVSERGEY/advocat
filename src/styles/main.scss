@@ -13,6 +13,8 @@
 @import "faq";
 @import "free-consultation";
 @import "testimonials";
+@import "form";
+@import "select";
 
 
 body {
@@ -33,6 +35,10 @@ a:hover, a:focus {
 }
 img {
   max-width: 100%;
+}
+.wow-outer {
+  position: relative;
+  overflow: hidden;
 }
 @import "rd-navbar";
 @import "to-top";

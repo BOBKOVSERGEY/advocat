@@ -343,7 +343,7 @@
           <p>Если Вы все-таки оказались в такой ситуации, где помощь адвоката Вам необходима – выбирайте адвоката. Посоветуйтесь со знакомыми и родными. Возможно, они уже обращались к кому-то из нас. При выборе адвоката, как Вы поняли, необходимо соблюсти должную осторожность. Познакомьтесь. Попросите показать удостоверение, внимательно прочитайте фамилию, имя, отчество. Проверьте на сайте адвокатской палаты субъекта Федерации, есть ли такой адвокат в реестре. При выборе адвоката помните, пожалуйста, что «хороший человек – это не профессия». Поговорите с несколькими адвокатами. Сделайте для себя вывод, с кем Вам следует работать. Ведь адвокату нужно доверять и прислушиваться к его советам.</p>
           <p>Ну, и поскольку это все-таки мой сайт, приглашаю Вас к себе. Возможно у нас с Вами получится восстановить справедливость там, где она нарушена.</p>
         </div>
-      <div class="retreat__btn">
+      <div class="retreat__btn wow slideInUp">
         <a href="#" class="btn btn--large btn--gold-fool retreat__btn-click">Читать далее</a>
       </div>
     </div>
@@ -622,10 +622,14 @@
     <div class="container text-center">
       <div class="row align-items-center">
         <div class="col-md-8">
-          <h2 class="free-consultation__heading">Адвокат, которому Вы можете доверять</h2>
+          <div class="wow-outer">
+            <h2 class="free-consultation__heading wow slideInRight">Адвокат, которому Вы можете доверять</h2>
+          </div>
         </div>
         <div class="col-md-4">
-          <a href="#" class="btn btn--big btn--white">Бесплатный совет</a>
+          <div class="wow-outer">
+            <a href="#" class="btn btn--big btn--white wow slideInLeft">Бесплатный совет</a>
+          </div>
         </div>
       </div>
     </div>
@@ -652,7 +656,7 @@
             <div class="quote-footer">
               <div class="testimonials__item-footer">
                 <div class="testimonials__item-img">
-                  <img src="dist/images/review-1.jpg" alt="">
+                  <img src="dist/images/clients-testimonials-2.jpg" alt="">
                 </div>
                 <div class="testimonials__item-name">
                   <div class="testimonials__item-lName">Максим</div>
@@ -691,6 +695,47 @@
               </div>
             </div>
           </blockquote>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="form-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-7">
+          <div class="form-main__wrapper-form">
+            <h2 class="form-main__heading">Бесплатная консультация</h2>
+            <form action="" class="form-main__form" method="post" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон" required>
+                  </div>
+                  <div class="form-main__form-wrapper-select">
+                    <select data-minimum-results-for-search="" class="select-filter">
+                      <option>Юридическая помощь</option>
+                      <option value="Юридическое сопровождение">Юридическое сопровождение</option>
+                      <option value="Экономические преступления">Экономические преступления</option>
+                      <option value="Арбитражные споры">Арбитражные споры</option>
+                      <option value="Гражданские дела">Гражданские дела</option>
+                      <option value="Вопросы недвижимости">Вопросы недвижимости</option>
+                      <option value="Уголовные дела">Уголовные дела</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="col-md-5">
+          <div class="form-main__img">
+            <img src="dist/images/form.png" alt="">
+          </div>
         </div>
       </div>
     </div>
