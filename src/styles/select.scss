@@ -92,7 +92,7 @@
 }
 
 .select2-results__option {
-  padding: 2px 10px;
+  padding: 6px 10px;
   font-size: 14px;
   transition: .3s;
   user-select: none;
@@ -179,8 +179,7 @@
   background-color: #fff;
   border: 1px solid #fff;
   border-radius: 0;
-  color: #9f9f9f;
-  font-family: "Lato", Helvetica, Arial, sans-serif;
+  color: $colorGray;
   font-size: 14px;
   outline: 0;
 }
@@ -348,10 +347,18 @@
   overflow-x: hidden;
 }
 
+
+
 .select2-container--bootstrap .select2-results > .select2-results__options {
   max-height: 200px;
   overflow-y: auto;
 }
+
+.select2-results__options::-webkit-scrollbar {
+  width: 4px;
+  height: 0; }
+.select2-results__options::-webkit-scrollbar-thumb {
+  background: #cccccc; }
 
 .select2-container--bootstrap .select2-selection--single {
   text-align: left;

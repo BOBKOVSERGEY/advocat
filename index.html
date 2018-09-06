@@ -702,7 +702,7 @@
   <section class="form-main">
     <div class="container">
       <div class="row">
-        <div class="col-md-7">
+        <div class="col-lg-7 col-md-12">
           <div class="form-main__wrapper-form">
             <h2 class="form-main__heading">Бесплатная консультация</h2>
             <form action="" class="form-main__form" method="post" enctype="multipart/form-data">
@@ -711,28 +711,64 @@
                   <div class="form-main__form-wrapper-input">
                     <input class="form-main__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя" required>
                   </div>
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email" required>
+                  </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-main__form-wrapper-input">
                     <input class="form-main__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон" required>
                   </div>
                   <div class="form-main__form-wrapper-select">
-                    <select data-minimum-results-for-search="" class="select-filter">
+                    <select data-minimum-results-for-search="" class="select-filter"><!--Infinity-->
                       <option>Юридическая помощь</option>
                       <option value="Юридическое сопровождение">Юридическое сопровождение</option>
-                      <option value="Экономические преступления">Экономические преступления</option>
                       <option value="Арбитражные споры">Арбитражные споры</option>
                       <option value="Гражданские дела">Гражданские дела</option>
                       <option value="Вопросы недвижимости">Вопросы недвижимости</option>
                       <option value="Уголовные дела">Уголовные дела</option>
+                      <option value="Гражданское право">Гражданское право</option>
+                      <option value="Представление интересов в судах">Представление интересов в судах</option>
+                      <option value="Жилищные споры">Жилищные споры</option>
+                      <option value="Трудовые споры">Трудовые споры</option>
+                      <option value="Экономические преступления">Экономические преступления</option>
+                      <option value="Наследственные дела">Наследственные дела</option>
+                      <option value="Взыскание долгов">Взыскание долгов</option>
+                      <option value="Защита прав потребителей">Защита прав потребителей</option>
+                      <option value="Защита прав собственников">Защита прав собственников</option>
+                      <option value="Консультация по уголовным делам">Консультация по уголовным делам</option>
+                      <option value="Налоговые споры">Налоговые споры</option>
+                      <option value="Взыскание морального вреда">Взыскание морального вреда</option>
+                      <option value="Личный или семейный адвокат">Личный или семейный адвокат</option>
+                      <option value="Споры со страховыми компаниями">Споры со страховыми компаниями</option>
                     </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-main__form-wrapper-textarea">
+                    <textarea class="form-main__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+                  </div>
+                  <div class="form-main__form-wrapper-file">
+                    <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+                    <label class="upload-file" for="file">
+                      <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
+                      <span class="upload-text-reset">Прикрепить файл</span>
+                    </label>
+                  </div>
+                  <div class="form-main__wrapper-checkbox">
+                    <input id="chk" type="checkbox" class="js-policy" checked=""><label for="chk">Подтверждаю свое согласие на <a href="#" class="form-main__checkbox-link" target="_blank">обработку</a> персональных данных</label>
+                  </div>
+                  <div class="form-main__form-wrapper-submit">
+                    <button class="form-main__btn btn btn--large btn--gold-fool" type="submit" name="submit">Отправить</button>
                   </div>
                 </div>
               </div>
             </form>
           </div>
         </div>
-        <div class="col-md-5">
+        <div class="col-lg-5 col-md-12">
           <div class="form-main__img">
             <img src="dist/images/form.png" alt="">
           </div>

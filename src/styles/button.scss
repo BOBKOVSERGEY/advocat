@@ -60,6 +60,12 @@
       border-color: $colorGoldDark;
       box-shadow: none;
     }
+    &.disabled {
+      cursor: not-allowed;
+    }
+    &:disabled {
+      cursor: not-allowed;
+    }
   }
   &--gold-white {
     color: $colorWhite;

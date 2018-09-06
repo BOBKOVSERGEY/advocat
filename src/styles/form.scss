@@ -13,4 +13,221 @@
   &__img {
     margin-top: -50px;
   }
+  &__form-wrapper-input {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__form-wrapper-textarea {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__form-wrapper-select {
+    margin-bottom: 30px;
+    position: relative;
+  }
+  &__form-wrapper-file {
+    margin-bottom: 30px;
+  }
+  &__wrapper-checkbox {
+    margin-bottom: 30px;
+  }
+  &__checkbox-link {
+    color: $colorGray;
+    transition: all .3s;
+    &:hover {
+      color: $colorBlack;
+    }
+  }
+  &__form-input {
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    font-size: 14px;
+    padding: 5px 18px;
+    color: $colorGray;
+    background: #fff;
+    border: 1px solid $colorWhite;
+    border-radius: 0;
+    transition: .3s all ease;
+    height: 52px;
+    &::-webkit-input-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &::-moz-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:-ms-input-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:placeholder-shown {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:focus {
+      outline: none;
+    }
+    &.error {
+      //border-bottom: 2px solid #a94442;
+      &:focus {
+        //border-bottom: 2px solid #a94442;
+        //box-shadow: inset 0 0 5px rgba(#a94442, .8);
+      }
+    }
+  }
+
+  &__form-textarea{
+
+    transition: .3s all ease;
+    font-family: inherit;
+    display: block;
+    width: 100%;
+    margin: 0;
+    -webkit-appearance: none;
+    font-size: 14px;
+    padding: 9px 18px;
+    color: $colorGray;
+    background: $colorWhite;
+    border: 1px solid $colorWhite;
+    border-radius: 0;
+    min-height: 156px;
+    max-height: 249px;
+    resize: vertical;
+    &.error {
+      //border-bottom: 2px solid #a94442;
+
+      &:focus {
+        //border-bottom: 2px solid #a94442;
+        //box-shadow: inset 0 0 5px rgba(#a94442, .8);
+      }
+    }
+    &::-webkit-input-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &::-moz-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:-ms-input-placeholder {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:placeholder-shown {
+      font-family: inherit;
+      color: $colorGray;
+    }
+    &:focus {
+      outline: none;
+    }
+  }
+
+}
+.inputfile {
+  display: none;
+}
+.upload-file {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  margin: 0;
+  -webkit-appearance: none;
+  font-size: 14px;
+  color: $colorGray;
+  background: #fff;
+  border: 1px solid $colorWhite;
+  transition: .3s all ease;
+  height: 52px;
+  line-height: 52px;
+  padding: 0 18px;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+.upload-file-icon {
+  font-size: 20px;
+  color: $colorGold;
+  margin-right: 10px;
+}
+
+
+.form-main input[type="checkbox"] + label {
+  position: relative;
+  display: block;
+  width: 100%;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+  color: $colorGray;
+  padding-left: 45px;
+  font-size: 14px;
+  //font-family: $fontRegular;
+}
+.form-main input[type="checkbox"] + label:before {
+  content: '';
+  position: absolute;
+  box-sizing: border-box;
+  width: 30px;
+  height: 30px;
+  border: 2px solid $colorGray;
+  //border-radius: 100%;
+  transform: translate(-50%, -50%);
+  transition: all ease-out 200ms;
+  left: 15px;
+  top: 50%;
+  //transform: translateY(-50%);
+  color: #333;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: pointer;
+}
+
+.form-main input[type="checkbox"] + label:after {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 13px;
+  border-bottom: 2px solid $colorGold;
+  border-left: 2px solid $colorGold;
+  left: 15px;
+  top: 50%;
+  margin-top: -7px;
+  transform-origin: bottom left;
+  transform: rotate(-45deg);
+  opacity: 0;
+  transition: all ease-out 200ms;
+}
+
+.form-main input[type="checkbox"]:checked + label:before {
+  border: 2px solid $colorGold;
+}
+.form-main input[type="checkbox"]:checked + label{
+  color: $colorGold;
+  //font-family: $fontRegular;
+}
+
+.form-main input[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  width: 36px;
+}
+
+#chk {
+  display: none;
+}
+
+@media only screen and (max-width : 992px) {
+  .form-main {
+    &__img {
+      display: none;
+    }
+  }
 }
