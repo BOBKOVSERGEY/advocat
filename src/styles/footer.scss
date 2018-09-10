@@ -1,0 +1,49 @@
+.footer {
+  padding: 60px 0;
+  background-color: $colorDarkBlue-2;
+  color: $colorWhite;
+  font-size: 15px;
+  &__policy {
+    text-align: right;
+    margin-top: 10px;
+    font-size: 12px;
+    & a {
+      color: $colorGold;
+      &:hover {
+        color: $colorGoldDark;
+      }
+    }
+  }
+  &__developer {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  &__developer-img {
+    margin-right: 10px;
+    & img {
+      width: 50px;
+    }
+  }
+  &__developer-text {
+    & a {
+      color: $colorGold;
+      transition: all .3s;
+      &:hover {
+        color: $colorGoldDark
+      }
+    }
+  }
+}
+
+@media only screen and (max-width : 768px) {
+  .footer {
+    &__copyright {
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    &__developer {
+      justify-content: center;
+    }
+  }
+}

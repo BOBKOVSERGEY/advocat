@@ -24,6 +24,15 @@ $(function () {
   var isNoviBuilder = window.xMode;
 
   /**
+   * Copyright Year
+   * @description  Evaluates correct copyright year
+   */
+  var o = $("#copyright-year");
+  if (o.length) {
+    o.text(initialDate.getFullYear());
+  }
+
+  /**
    * Adjustments for Safari on Mac
    */
   (function ($) {

@@ -17,15 +17,15 @@
   text-decoration: none;
   z-index: 20;
   transition: .3s all ease;
-  -webkit-box-shadow: 0 0 1px 0px rgba($colorDarkBlue-2, 0.3);
-  box-shadow: 0 0 1px 0px rgba($colorDarkBlue-2, 0.3);
+  -webkit-box-shadow: 0 0 1px 0px rgba($colorDarkBlue, 0.3);
+  box-shadow: 0 0 1px 0px rgba($colorDarkBlue, 0.3);
   -webkit-transform: translateY(100px);
   transform: translateY(100px);
 }
 
 .ui-to-top, .ui-to-top:active, .ui-to-top:focus {
   color: #fff;
-  background: $colorDarkBlue-2;
+  background: $colorDarkBlue;
 }
 
 .ui-to-top:hover {

@@ -1,0 +1,23 @@
+.heading {
+  position: relative;
+  background-image: url(../images/achievements.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba($colorDarkBlue-2, .85), rgba($colorDarkBlue-2, .85));
+  }
+  &__heading {
+    font-family: $fontBold;
+    font-size: 59px;
+    color: $colorWhite;
+    position: relative;
+  }
+}
