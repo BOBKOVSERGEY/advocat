@@ -7,8 +7,9 @@
   &__heading {
     font-family: $fontBold;
     margin-bottom: 30px;
-    font-size: 36px;
+    font-size: 45px;
     color: $colorBlack;
+    text-align: center;
   }
   &__img {
     margin-top: -50px;
@@ -228,6 +229,13 @@
   .form-main {
     &__img {
       display: none;
+    }
+  }
+}
+@media only screen and (max-width : 768px) {
+  .form-main {
+    &__heading {
+      font-size: 36px;
     }
   }
 }

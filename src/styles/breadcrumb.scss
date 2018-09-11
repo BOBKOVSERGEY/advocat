@@ -1,0 +1,109 @@
+.breadcrumb-modern {
+  position: relative;
+  background: no-repeat center;
+  background-size: cover;
+  height: 500px;
+  &__wrap {
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+  }
+  &__transform {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: calc(100% + 150px);
+    height: calc(100% + 150px);
+    will-change: transform;
+    animation: bgTransform 100s linear infinite;
+    transform: translate3d(75px, -75px, 0) rotate(0.001deg);
+    background-position: 50% 50%;
+    background-size: cover;
+    pointer-events: none;
+    z-index: -1;
+  }
+  &__body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 500px;
+    z-index: 2;
+  }
+  &__title {
+    position: relative;
+    margin-bottom: auto;
+    font-family: $fontBold;
+    color: $colorWhite;
+    font-size: 45px;
+    top: 50%;
+    transform: translate(0, -50%);
+    margin-top: -15px;
+  }
+  &__path {
+    padding: 15px 0;
+    margin-left: -33px;
+    margin-right: -33px;
+    color: $colorWhite;
+    font-size: 16px;
+    & a {
+      color: $colorWhite;
+      transition: all .3s;
+      &:active {
+        color: $colorWhite;
+      }
+      &:focus {
+        color: $colorWhite;
+      }
+    }
+    & > * {
+      padding-left: 33px;
+      padding-right: 33px;
+    }
+    & li {
+      position: relative;
+      display: inline-block;
+      vertical-align: middle;
+      & a:hover {
+        color: $colorGold;
+      }
+    }
+    & li::after {
+      color: $colorWhite;
+    }
+    & li::after {
+      content: "";
+      position: absolute;
+      top: 55%;
+      right: -12px;
+      font-size: 19px;
+      line-height: 1;
+      font-style: normal;
+      font-family: "Material Design Icons";
+      transform: translate3d(0, -50%, 0);
+    }
+    & li:last-child:after {
+      display: none;
+    }
+  }
+  &:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right bottom, rgba($colorDarkBlue-2, .45), rgba($colorDarkBlue-2, .45));
+  }
+}
+
+@keyframes bgTransform {
+  25% {
+    transform: translate3d(150px, -150px, 0) scale(1.05) rotate(0.001deg);
+  }
+  75% {
+    transform: translate3d(0, 0, 0) scale(1.1) rotate(0.001deg);
+  }
+}
+
+
