@@ -44,16 +44,16 @@
     padding: 15px 0;
     margin-left: -33px;
     margin-right: -33px;
-    color: $colorWhite;
+    color: $colorGold;
     font-size: 16px;
     & a {
-      color: $colorWhite;
+      color: $colorGold;
       transition: all .3s;
       &:active {
-        color: $colorWhite;
+        color: $colorGold;
       }
       &:focus {
-        color: $colorWhite;
+        color: $colorGold;
       }
     }
     & > * {
@@ -65,11 +65,11 @@
       display: inline-block;
       vertical-align: middle;
       & a:hover {
-        color: $colorGold;
+        color: $colorWhite;
       }
     }
     & li::after {
-      color: $colorWhite;
+      color: $colorGold;
     }
     & li::after {
       content: "";

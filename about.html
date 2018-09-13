@@ -58,7 +58,7 @@
           <div class="rd-navbar-group">
             <div class="rd-navbar-panel">
               <button data-rd-navbar-toggle=".rd-navbar-nav-wrap" class="rd-navbar-toggle"><span></span></button>
-              <a href="#" class="rd-navbar-brand brand">
+              <a href="/" class="rd-navbar-brand brand">
                 <div class="logo">
                   <div class="logo__img">
                     <img src="dist/images/balance.svg" alt="">
@@ -73,9 +73,9 @@
               <div class="rd-navbar-nav-inner">
                 <div class="rd-navbar-btn-wrap"><a href="#" class="btn btn--small btn--gold">Получить совет</a></div>
                 <ul class="rd-navbar-nav">
-                  <li class="active"><a href="#">Главная</a>
+                  <li class="active"><a href="/">Главная</a>
                   </li>
-                  <li><a href="#">Об адвокате</a>
+                  <li><a href="about.html">Об адвокате</a>
                   </li>
                   <!--<li><a href="#">Cases</a>
                     <ul class="rd-navbar-dropdown">
@@ -108,7 +108,7 @@
                       <li>
                         <!--<h5 class="rd-megamenu-header">Помощь адвоката физическим лицам</h5>-->
                         <ul class="rd-navbar-list">
-                          <li><a href="#">Юридическое сопровождение</a></li>
+                          <li><a href="service.html">Юридическое сопровождение</a></li>
                           <li><a href="#">Экономические преступления</a></li>
                           <li><a href="#">Арбитражные споры</a></li>
                           <li><a href="#">Гражданские дела</a></li>
@@ -154,52 +154,100 @@
       </nav>
     </div>
   </header>
-  <section class="slider">
-    <div data-loop="false" data-slide-effect="fade" data-autoplay="10000"  data-simulate-touch="true" class="swiper-container swiper-slider swiper-variant-1 bg-gray-base">
-      <div class="swiper-wrapper text-center">
-        <div data-slide-bg="dist/images/slider-vn-2.jpg" class="swiper-slide">
-          <div class="slider__item-bg">
-            <div class="swiper-slide-caption text-center">
-              <div class="row">
-                <div class="col-md-8 offset-md-2">
-                  <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider__item-heading">Абонентское обслуживание предприятия</h2>
-                  <p data-caption-animate="fadeInUp" data-caption-delay="150" class="slider__item-heading-after">Заключение долгосрочного договора на оказание юридической помощи предприятию.</p>
-                  <div class="slider__item-btn-wrap">
-                    <a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" class="btn btn--large btn--gold-white">Бесплатная консультация</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div data-slide-bg="dist/images/slider-vn-1.jpg" class="swiper-slide">
-          <div class="slider__item-bg">
-            <div class="swiper-slide-caption text-center">
-              <div class="row">
-                <div class="col-md-8 offset-md-2">
-                  <h2 data-caption-animate="fadeInUp" data-caption-delay="0s" class="slider__item-heading">Адвокат для бизнеса</h2>
-                  <p data-caption-animate="fadeInUp" data-caption-delay="150" class="slider__item-heading-after">Заключение долгосрочного договора на оказание юридической помощи предприятию.</p>
-                  <div class="slider__item-btn-wrap">
-                    <a data-caption-animate="fadeInUp" data-caption-delay="250" href="#" class="btn btn--large btn--gold-white">Бесплатная консультация</a>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="breadcrumb-modern breadcrumb-modern__wrap" style="background-image: url(dist/images/slider-vn-2.jpg);">
+    <div class="container">
+      <div class="breadcrumb-modern__body">
+        <h1 class="breadcrumb-modern__title">Об адвокате</h1>
+        <ul class="breadcrumb-modern__path">
+          <li><a href="index.html">Главная</a></li>
+          <li class="active">Об адвокате</li>
+        </ul>
       </div>
-      <!--<div class="swiper-scrollbar veil-md"></div>-->
-      <div class="swiper-nav-wrap">
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+    </div>
+    <div class="breadcrumb-modern__transform" style="background-image: url(dist/images/slider-vn-2.jpg);"></div>
+  </div>
+  <article class="article">
+    <div class="container">
+      <p>Адвокат ( реестровый номер 77/10680). Закончила в 1980году Саратовский юридический институт. 20 лет - служба в органах внутренних дел. Старший следователь по особо важным делам. Подполковник юстиции в отставке. С 1999года адвокат. Юридическая помощь по гражданским, арбитражным, уголовным делам. C 2007 оказываю консультативно-юридическую помощь строительной организации.</p>
+    </div>
+  </article>
+  <section class="form-main">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <div class="form-main__wrapper-form">
+            <h2 class="form-main__heading">Бесплатная консультация</h2>
+            <form action="" class="form-main__form" method="post" enctype="multipart/form-data">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя" required>
+                  </div>
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email" required>
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="form-main__form-wrapper-input">
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон" required>
+                  </div>
+                  <div class="form-main__form-wrapper-select">
+                    <select data-minimum-results-for-search="" class="select-filter"><!--Infinity-->
+                      <option>Юридическая помощь</option>
+                      <option value="Юридическое сопровождение">Юридическое сопровождение</option>
+                      <option value="Арбитражные споры">Арбитражные споры</option>
+                      <option value="Гражданские дела">Гражданские дела</option>
+                      <option value="Вопросы недвижимости">Вопросы недвижимости</option>
+                      <option value="Уголовные дела">Уголовные дела</option>
+                      <option value="Гражданское право">Гражданское право</option>
+                      <option value="Представление интересов в судах">Представление интересов в судах</option>
+                      <option value="Жилищные споры">Жилищные споры</option>
+                      <option value="Трудовые споры">Трудовые споры</option>
+                      <option value="Экономические преступления">Экономические преступления</option>
+                      <option value="Наследственные дела">Наследственные дела</option>
+                      <option value="Взыскание долгов">Взыскание долгов</option>
+                      <option value="Защита прав потребителей">Защита прав потребителей</option>
+                      <option value="Защита прав собственников">Защита прав собственников</option>
+                      <option value="Консультация по уголовным делам">Консультация по уголовным делам</option>
+                      <option value="Налоговые споры">Налоговые споры</option>
+                      <option value="Взыскание морального вреда">Взыскание морального вреда</option>
+                      <option value="Личный или семейный адвокат">Личный или семейный адвокат</option>
+                      <option value="Споры со страховыми компаниями">Споры со страховыми компаниями</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="form-main__form-wrapper-textarea">
+                    <textarea class="form-main__form-textarea" autocomplete="off" name="comment" placeholder="Комментарий"></textarea>
+                  </div>
+                  <div class="form-main__form-wrapper-file">
+                    <input type="file" id="file" autocomplete="off" class="hide-type-file inputfile" data-multiple-caption="{count} files selected" name="attachment">
+                    <label class="upload-file" for="file">
+                      <i class="fa fa-paperclip upload-file-icon" aria-hidden="true"></i>
+                      <span class="upload-text-reset">Прикрепить файл</span>
+                    </label>
+                  </div>
+                  <div class="form-main__wrapper-checkbox">
+                    <input id="chk" type="checkbox" class="js-policy" checked=""><label for="chk">Подтверждаю свое согласие на <a href="#" class="form-main__checkbox-link" target="_blank">обработку</a> персональных данных</label>
+                  </div>
+                  <div class="form-main__form-wrapper-submit">
+                    <button class="form-main__btn btn btn--large btn--gold-fool" type="submit" name="submit">Отправить</button>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!--<div class="col-lg-5 col-md-12">
+          <div class="form-main__img">
+            <img src="dist/images/form.png" alt="">
+          </div>
+        </div>-->
       </div>
     </div>
   </section>
-  <!--<section class="heading">
-    <div class="container">
-      <h1 class="heading__heading">Об адвокате</h1>
-    </div>
-  </section>-->
   <footer class="footer">
     <div class="container">
       <div class="row d-flex align-items-center">
