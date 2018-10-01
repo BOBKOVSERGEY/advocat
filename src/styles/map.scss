@@ -1,0 +1,141 @@
+.rd-google-map {
+  color: #333;
+  position: relative;
+  overflow: hidden;
+}
+
+.rd-google-map .content-aside-right {
+  display: none;
+  position: absolute;
+  right: 7.5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+  z-index: 3;
+  color: #fff;
+}
+
+@media (min-width: 992px) {
+  .rd-google-map .content-aside-right {
+    display: block;
+  }
+}
+
+.rd-google-map .map-overlay-aside {
+  display: none;
+}
+
+@media (min-width: 992px) {
+  .rd-google-map .map-overlay-aside {
+    display: block;
+    position: absolute;
+    left: 85.5%;
+    top: -110%;
+    height: 340%;
+    width: 10000px;
+    background: rgba(0, 127, 255, 0.85);
+    -webkit-transform-origin: 0 0;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotate(31deg);
+    transform: rotate(31deg);
+    z-index: 2;
+  }
+}
+
+.rd-google-map__model {
+  height: 250px;
+}
+
+.rd-google-map__model img {
+  max-width: none !important;
+}
+
+@media (min-width: 480px) {
+  .rd-google-map__model {
+    height: 250px;
+  }
+}
+
+@media (min-width: 768px) {
+  .rd-google-map__model {
+    height: 550px;
+  }
+}
+
+.rd-google-map__locations {
+  display: none;
+  text-align: left;
+}
+
+.rd-google-map .gm-style-iw {
+  top: 19px !important;
+  left: 7px !important;
+}
+
+.rd-google-map .gm-style-iw div > div {
+  overflow: hidden !important;
+}
+
+.rd-google-map .gmnoprint,
+.rd-google-map .gm-style-cc,
+.rd-google-map .gmnoprint,
+.rd-google-map .gmnoprint,
+.rd-google-map .gmnoscreen,
+.rd-google-map .gmnoprint {
+  z-index: 999999;
+}
+
+.rd-google-map .gmnoprint {
+  left: 0px !important;
+  right: auto !important;
+}
+
+.rd-google-map .gm-style-cc {
+  left: 241px !important;
+  right: auto !important;
+}
+
+.rd-google-map .gmnoscreen {
+  right: auto !important;
+  left: 120px !important;
+}
+
+.rd-google-map .gmnoprint.gm-bundled-control.gm-bundled-control-on-bottom {
+  right: auto !important;
+  left: 28px !important;
+}
+
+.rd-google-map .iw-content {
+  text-align: left;
+}
+
+.rd-google-map .contact-info {
+  min-width: 300px;
+  margin-bottom: 10px;
+}
+
+.rd-google-map .contact-info p {
+  margin-bottom: -2px;
+}
+
+.rd-google-map .contact-info dl {
+  vertical-align: middle;
+  margin-bottom: -2px;
+}
+
+.rd-google-map .contact-info dl dd, .rd-google-map .contact-info dl dt {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rd-google-map .contact-info dl dt .icon {
+  margin-top: -1px;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.rd-google-map .contact-info dl + dl {
+  margin-top: 0;
+}
