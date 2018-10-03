@@ -504,11 +504,25 @@ $(function () {
   /*** end policy ***/
   function checkPolicy () {
     if ($(".js-policy").is(':checked')) {
-      $("[type=submit]").prop('disabled', false);
+      $(".form-main__btn").prop('disabled', false);
     } else {
-      $("[type=submit]").prop('disabled', true);
+      $(".form-main__btn").prop('disabled', true);
     }
   };
+
+  /*** policy ***/
+  $('.js-policy-modal').on('click', function($el){
+    checkPolicyModal();
+  });
+  /*** end policy ***/
+  function checkPolicyModal () {
+    if ($(".js-policy-modal").is(':checked')) {
+      $(".modal-popup__btn").prop('disabled', false);
+    } else {
+      $(".modal-popup__btn").prop('disabled', true);
+    }
+  };
+
 
   if (plugins.googleMap.length) {
     plugins.googleMap.googleMap({
