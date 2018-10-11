@@ -548,6 +548,104 @@ $(function () {
     });
   }
 
+  /*validate form-main__form*/
+  $('.form-main__form').validate({
+    submitHandler: function(form){
+      var form = document.forms.formMain,
+        formData = new FormData(form),
+        xhr = new XMLHttpRequest();
+
+      xhr.open("POST", "/send-main.php");
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          if(xhr.status == 200) {
+            $("#formMain")[0].reset();
+            $('.upload-text-reset').text('Прикрепить файл');
+            $(".form-main__answer").html('<div class="form-main__form-tanks">Заявка успешно отправлена!<div>');
+          } else {
+            $(".form-main__answer").html('<div class="form-main__form-tanks">Что то пошло не так!<div>');
+          }
+        }
+      };
+      xhr.send(formData);
+    },
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      },
+      phone: {
+        required: "Введите Ваш телефон"
+      }
+    }
+  });
+
+  /*validate modal-popup__form*/
+  $('.modal-popup__form').validate({
+    submitHandler: function(form){
+      var form = document.forms.formModal,
+        formData = new FormData(form),
+        xhr = new XMLHttpRequest();
+
+      xhr.open("POST", "/send-main.php");
+
+      xhr.onreadystatechange = function() {
+        if (xhr.readyState == 4) {
+          if(xhr.status == 200) {
+            $("#formModal")[0].reset();
+            $('.upload-text-reset').text('Прикрепить файл');
+            $(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Заявка успешно отправлена!<div>');
+          } else {
+            $(".modal-popup__answer").html('<div class="modal-popup__form-tanks">Что то пошло не так!<div>');
+          }
+        }
+      };
+      xhr.send(formData);
+    },
+    rules: {
+      name: {
+        required: true,
+      },
+      email: {
+        required: true,
+        email: true
+      },
+      phone: {
+        required: true
+      }
+
+    },
+    messages: {
+      name: {
+        required: "Введите Ваше имя"
+      },
+      email: {
+        required: "Введите адрес электронной почты",
+        email: "Не корректный адрес"
+      },
+      phone: {
+        required: "Введите Ваш телефон"
+      }
+    }
+  });
+
 
 
 

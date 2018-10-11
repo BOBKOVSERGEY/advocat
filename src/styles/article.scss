@@ -1,5 +1,12 @@
 .article {
   padding: 60px 0;
+  & a {
+    color: $colorGold;
+    transition: all .3s;
+    &:hover {
+      color: $colorGoldDark;
+    }
+  }
   &__heading-2 {
     text-align: center;
     font-family: $fontBold;

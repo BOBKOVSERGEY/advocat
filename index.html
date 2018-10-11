@@ -577,23 +577,24 @@
         <div class="col-md-12">
           <div class="form-main__wrapper-form">
             <h2 class="form-main__heading">Бесплатная консультация</h2>
-            <form action="" class="form-main__form" method="post" enctype="multipart/form-data">
+            <div class="form-main__answer"></div>
+            <form action="#" class="form-main__form" id="formMain" method="post" enctype="multipart/form-data">
               <div class="row">
                 <div class="col-md-6">
                   <div class="form-main__form-wrapper-input">
-                    <input class="form-main__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя" required>
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
                   </div>
                   <div class="form-main__form-wrapper-input">
-                    <input class="form-main__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email" required>
+                    <input class="form-main__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email">
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="form-main__form-wrapper-input">
-                    <input class="form-main__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон" required>
+                    <input class="form-main__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
                   </div>
                   <div class="form-main__form-wrapper-select">
-                    <select data-minimum-results-for-search="" class="select-filter"><!--Infinity-->
-                      <option>Юридическая помощь</option>
+                    <select data-minimum-results-for-search="" name="help" class="select-filter"><!--Infinity-->
+                      <option value="Юридическая помощь">Юридическая помощь</option>
                       <option value="Юридическое сопровождение">Юридическое сопровождение</option>
                       <option value="Арбитражные споры">Арбитражные споры</option>
                       <option value="Гражданские дела">Гражданские дела</option>
@@ -677,23 +678,24 @@
         </button>
       </div>
       <div class="modal-body">
-        <form action="" class="modal-popup__form" method="post" enctype="multipart/form-data">
+        <div class="modal-popup__answer"></div>
+        <form action="#" class="modal-popup__form" id="formModal" method="post" enctype="multipart/form-data">
           <div class="row">
             <div class="col-lg-6">
               <div class="modal-popup__form-wrapper-input">
-                <input class="modal-popup__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя" required>
+                <input class="modal-popup__form-input" type="text" autocomplete="off" name="name" placeholder="Ваше имя">
               </div>
               <div class="modal-popup__form-wrapper-input">
-                <input class="modal-popup__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email" required>
+                <input class="modal-popup__form-input" type="email" autocomplete="off" name="email" placeholder="Ваше email">
               </div>
             </div>
             <div class="col-lg-6">
               <div class="modal-popup__form-wrapper-input">
-                <input class="modal-popup__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон" required>
+                <input class="modal-popup__form-input" type="text" autocomplete="off" name="phone" placeholder="Ваш телефон">
               </div>
               <div class="modal-popup__form-wrapper-select">
-                <select data-minimum-results-for-search="" class="select-filter"><!--Infinity-->
-                  <option>Юридическая помощь</option>
+                <select data-minimum-results-for-search="" name="help" class="select-filter"><!--Infinity-->
+                  <option value="Юридическая помощь">Юридическая помощь</option>
                   <option value="Юридическое сопровождение">Юридическое сопровождение</option>
                   <option value="Арбитражные споры">Арбитражные споры</option>
                   <option value="Гражданские дела">Гражданские дела</option>

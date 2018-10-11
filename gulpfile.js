@@ -61,7 +61,7 @@ gulp.task('sass', function () {
       browsers: ['>5%'],
       cascade: false
     }))
-    //.pipe(csso())
+    .pipe(csso())
     .pipe(sourcemaps.write())
     .pipe(gulp.dest(path.sass.dist));
 });

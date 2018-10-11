@@ -10,26 +10,11 @@
     font-family: $fontBold;
     text-align: center;
     width: 100%;
-    margin: 35px 0 0 1rem;
+    margin: 15px 0 0 1rem;
     color: $colorBlackNormal;
     position: relative;
-    padding: 16px 0 26px;
+    padding-left: 26px;
     font-size: 32px;
-    &:before, &:after {
-      content: '';
-      position: absolute;
-      left: 50%;
-      width: 270px;
-      height: 1px;
-      transform: translateX(-50%);
-      background: linear-gradient(to right, rgba(255, 255, 255, 0) 0%, #d9d9d9 50%, transparent 100%);
-    }
-    &:before {
-      top: 0;
-    }
-    &:after {
-      bottom: 0;
-    }
   }
   & .modal-body {
     padding: 1rem 2rem 2rem 2rem;
@@ -145,6 +130,22 @@
     &:focus {
       outline: none;
     }
+  }
+  & label.error {
+    position: absolute;
+    right: 15px;
+    top: 5px;
+    font-size: 11px;
+    color: #dc0000;
+    transition: all 1s;
+  }
+  &__form-tanks {
+    text-align: center;
+    margin-bottom: 15px;
+    font-size: 2rem;
+    color: #28a745;
+    margin-top: -35px;
+    margin-left: 1rem;
   }
 }
 
