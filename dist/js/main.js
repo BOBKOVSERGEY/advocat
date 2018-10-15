@@ -650,3 +650,15 @@ $(function () {
 
 
 });
+
+/*button share*/
+(function () {
+  var share = document.querySelector('.share__icon');
+  var hint = document.querySelector('.share__hint');
+  if (share) {
+    share.addEventListener('click', function () {
+      hint.classList.toggle('share__hint--visible');
+      share.classList.toggle('share__icon--active');
+    })
+  }
+})();

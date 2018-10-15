@@ -10,6 +10,7 @@
 @import "about-main";
 @import "map";
 @import "newmenu";
+@import "share";
 
 
 @import "heading";
@@ -58,6 +59,9 @@ img {
 .wow-outer {
   position: relative;
   overflow: hidden;
+}
+.container__relative {
+  position: relative;
 }
 
 
