@@ -563,6 +563,11 @@ $(function () {
             $("#formMain")[0].reset();
             $('.upload-text-reset').text('Прикрепить файл');
             $(".form-main__answer").html('<div class="form-main__form-tanks">Заявка успешно отправлена!<div>');
+            //$(".form-main__answer-button").text('Сообщение отправлено!');
+
+            //setTimeout(function () {
+              //setTimeout($(".form-main__answer-button").text(''), 3000);
+            //}, 3000);
           } else {
             $(".form-main__answer").html('<div class="form-main__form-tanks">Что то пошло не так!<div>');
           }

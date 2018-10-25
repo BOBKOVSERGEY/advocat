@@ -1,6 +1,11 @@
 .form-main {
   //padding: 100px 0;
   background-color: $colorGrayLight;
+  &__answer-button {
+    border: 0;
+    background: none;
+    color: #28a745;
+  }
   &__wrapper-form {
     padding: 100px 0;
   }
