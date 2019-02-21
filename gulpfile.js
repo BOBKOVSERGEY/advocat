@@ -1,5 +1,7 @@
 // modules
 var gulp = require('gulp');
+var uglify = require('gulp-uglify');
+var pump = require('pump');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
 var sassGlob = require('gulp-sass-glob');
@@ -19,7 +21,11 @@ var path = {
     src : SRC_DIR + 'styles/**/*.scss',
     dist : DIST_DIR + 'css'
   },
-
+  js : {
+    entry : SRC_DIR + 'js/main.js',
+    src : SRC_DIR + 'js/**/*.js',
+    dist : DIST_DIR + 'js'
+  },
   sprite : {
     src : SRC_DIR + 'img/icons/*.png',
     distImg : DIST_DIR + 'img',
@@ -66,6 +72,16 @@ gulp.task('sass', function () {
     .pipe(gulp.dest(path.sass.dist));
 });
 
+gulp.task('js', function(cb) {
+  pump([
+      gulp.src(path.js.entry),
+      uglify(),
+      gulp.dest(path.js.dist)
+    ],
+    cb
+  );
+});
+
 
 
 // watch
@@ -73,7 +89,10 @@ gulp.task('watch', function () {
   browserSync.init({
     server: "./"
   });
-  gulp.watch(path.sass.src, ['sass'])
+  gulp.watch(path.sass.src, ['sass']);
+
+  gulp.watch(path.js.src, ['js']);
+
   gulp.watch(['*.*', 'dist/css/*.css', 'dist/images/*.*', 'dist/js/*.*']).on('change', browserSync.reload);
   gulp.watch('src/img/*', ['compress']);
 })
